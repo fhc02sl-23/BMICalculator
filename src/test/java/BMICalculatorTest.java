@@ -62,8 +62,11 @@ class BMICalculatorTest {
         Assertions.assertEquals(23.66, bmiCalcHerrLitrop.calculateBMI());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
+    @DisplayName("calculateBMICategoryTest")
     void calculateBMICategory() {
+        Assertions.assertEquals(0, bmiCalcFrauLitrop.calculateBMICategory());
+        Assertions.assertEquals(0, bmiCalcFrauLitrop.calculateBMICategory());
     }
 
     @org.junit.jupiter.api.Test
