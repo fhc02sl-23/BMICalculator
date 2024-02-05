@@ -17,9 +17,10 @@ public class BMICalculator {
     public double calculateBMI()
     {
         double bmi = 0;
-        bmi = bodyWeight / (((double) bodyHeight /100)*(bodyHeight/100));
 
-        return Math.round(100.0*bmi)/100.0;
+        bmi = (bodyWeight / (((double) bodyHeight /100)*((double) bodyHeight /100)));
+
+        return Math.round(bmi)/100.00;
     }
 
     public int calculateBMICategory()
@@ -67,7 +68,7 @@ public class BMICalculator {
                 break;
         }
 
-        return katName;
+        return "nicht kategorisiert";
     }
 
     public String getFirstname() {
