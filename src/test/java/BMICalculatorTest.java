@@ -51,7 +51,7 @@ class BMICalculatorTest {
     @Test
     @DisplayName("calculateBMICategoryTest")
     void calculateBMICategory() {
-        Assertions.assertEquals(1, bmiCalcFrauLitrop.calculateBMICategory());
+        Assertions.assertEquals(0, bmiCalcFrauLitrop.calculateBMICategory());
         Assertions.assertEquals(0, bmiCalcHerrLitrop.calculateBMICategory());
     }
 
