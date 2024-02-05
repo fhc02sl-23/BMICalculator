@@ -41,9 +41,25 @@ class BMICalculatorTest {
         Assertions.assertEquals('m', bmiCalcHerrLitrop.getGender());
     }
 
-    @org.junit.jupiter.api.Test
-    void calculateBMI() {
 
+    /**
+     * Beispiel-Werte:
+     * bodyHeight
+     * 170
+     * 180
+     * bodyWeight
+     * 70
+     * 120
+     * bmi
+     * 24.2214
+     * 37.037037
+     * Commit und Push durchführen und Pipeline auf GitHub überprüfen
+     */
+    @Test
+    @DisplayName("calculateBMITest")
+    void calculateBMI() {
+        Assertions.assertEquals(22.49, bmiCalcFrauLitrop.calculateBMI());
+        Assertions.assertEquals(23.66, bmiCalcHerrLitrop.calculateBMI());
     }
 
     @org.junit.jupiter.api.Test

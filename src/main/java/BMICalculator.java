@@ -20,7 +20,7 @@ public class BMICalculator {
 
         bmi = (bodyWeight / (((double) bodyHeight /100)*((double) bodyHeight /100)));
 
-        return Math.round(bmi)/100.00;
+        return Math.round(100*bmi)/100.00;
     }
 
     public int calculateBMICategory()
