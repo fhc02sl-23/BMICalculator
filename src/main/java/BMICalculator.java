@@ -68,7 +68,7 @@ public class BMICalculator {
                 break;
         }
 
-        return "nicht kategorisiert";
+        return katName;
     }
 
     public String getFirstname() {

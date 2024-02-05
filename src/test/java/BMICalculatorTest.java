@@ -41,20 +41,6 @@ class BMICalculatorTest {
         Assertions.assertEquals('m', bmiCalcHerrLitrop.getGender());
     }
 
-
-    /**
-     * Beispiel-Werte:
-     * bodyHeight
-     * 170
-     * 180
-     * bodyWeight
-     * 70
-     * 120
-     * bmi
-     * 24.2214
-     * 37.037037
-     * Commit und Push durchführen und Pipeline auf GitHub überprüfen
-     */
     @Test
     @DisplayName("calculateBMITest")
     void calculateBMI() {
@@ -66,10 +52,13 @@ class BMICalculatorTest {
     @DisplayName("calculateBMICategoryTest")
     void calculateBMICategory() {
         Assertions.assertEquals(0, bmiCalcFrauLitrop.calculateBMICategory());
-        Assertions.assertEquals(0, bmiCalcFrauLitrop.calculateBMICategory());
+        Assertions.assertEquals(0, bmiCalcHerrLitrop.calculateBMICategory());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
+    @DisplayName("getBMICategoryNameTest")
     void getBMICategoryName() {
+        Assertions.assertEquals("Normalgewicht", bmiCalcFrauLitrop.getBMICategoryName());
+        Assertions.assertEquals("Normalgewicht", bmiCalcHerrLitrop.getBMICategoryName());
     }
 }
